@@ -5,4 +5,4 @@
 
 ## Propósito
 
-## How to Run
+## Cómo correr el proyecto
