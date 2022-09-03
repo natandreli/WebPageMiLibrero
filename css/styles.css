@@ -97,6 +97,17 @@ h1 {
     top: 500px;
 }
 
+.pTituloIndex {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 30px;
+    line-height: 39px;
+    text-align: left;
+}
+
 .sctButtonIndex {
     position: absolute;
     left: 50px;
@@ -208,6 +219,44 @@ h1 {
     left: 50px;
     width: 1400px;
     height: 100px;
+}
+
+.triangulo {
+    position: absolute;
+    bottom: 115px;
+    left: 730px;
+    width: 0;
+    height: 0;
+    border-top: 30px solid #FFFFFF;
+    border-right: 20px solid transparent;
+    border-left: 20px solid transparent;
+    z-index: 2;
+}
+
+.bocadillo {
+    position: absolute;
+    bottom: 135px;
+    left: 595px;
+    background-color: #FFFFFF;
+    border: 2px solid #C0CCDA;
+    border-radius: 10px;
+    width: 280px;
+    height: 55px;
+    padding: 10px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 18px;
+    line-height: 30px;
+    text-align: center;
+    z-index: 2;
+}
+
+#trianguloIndex{
+    left: 906px;
+}
+
+#bocadilloIndex {
+    left: 772px;
 }
 
 #sctIngresarDatos {
@@ -419,6 +468,14 @@ input {
     top: 71px;
     left: 1101px;
     width: 249px;
+}
+
+.btnBuscar:hover {
+    background-color: #FFFFFF55;
+}
+
+.btnBuscar:active {
+    background-color: #ffe877;
 }
 
 #sctContactanosLibros {
