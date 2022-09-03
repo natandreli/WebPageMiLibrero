@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+:root {
+    --bs-font: 'Roboto Slab', serif;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #7A7A7A;
+}
+
+header {
+    position: absolute;
+    top: 50px;
+    left: 60px;
+    width: 1400px;
+    height: 200px;
+    background-color: #585858;
+    border-radius: 10px;
+}
+
+#barraDeNavegacion {
+    position: absolute;
+    top: 300px;
+    left: 60px;
+    height: 50px;
+    width: 1400px;
+    background-color: #585858;
+    border-radius: 10px;
+}
+
+#barraDeNavegacion ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+#barraDeNavegacion li {
+    position: relative;
+    top: 7px;
+    display: inline;
+    text-align: center;
+    margin: 0px 15px 0 0;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: var(--bs-font);
+    font-size: 25px;
+}
+
+a:hover {
+    color: #8fdee7;
+}
+
+h1 {
+    position: relative;
+    top: 34px;
+    color: #FFFFFF;
+    font-family: var(--bs-font);
+    font-size: 100px;
+    line-height: 130px;
+    text-align: center;
+}
+
+.cuerpo {
+    position: relative;
+    margin-bottom: 50px;
+    top: 400px;
+    left: 10px;
+    background-color: #585858;
+}
+
+#cuerpoIndex {
+    width: 1500px;
+    height: 1100px;
+}
+
+.textSection {
+    position: absolute;
+    left: 400px;
+    background-color: #FFFAE2;
+    border-radius: 10px;
+    width: 1050px;
+    height: 400px;
+}
+
+#paraQueLeer {
+    top: 50px;
+}
+
+#proposito {
+    top: 500px;
+}
+
+.buttonSection {
+    position: absolute;
+    left: 50px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    cursor: pointer;
+}
+
+#libros {
+    top: 50px;
+    background-color: #FFC6F0;
+}
+
+#libros:hover {
+    background-color: #FFC6F055;
+}
+
+#libros:active {
+    background-color: #ffe877;
+}
+
+#autores {
+    top: 400px;
+    background-color: #FFC29F;
+}
+
+#autores:hover {
+    background-color: #FFC29F55;
+}
+
+#autores:active {
+    background-color: #ffe877;
+}
+
+#generos {
+    top: 750px;
+    background-color: #97DEB7;
+}
+
+#generos:hover {
+    background-color: #97deb755;
+}
+
+#generos:active {
+    background-color: #ffe877;
+}
+
+.buttonSectionImg {
+    position: relative;
+    top: 29px;
+    left: 64px;
+    width: 174px;
+    height: 174px;
+}
+
+.button {
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    background-color: #FFFFFF;
+    border: 2px solid #585858;
+    border-radius: 5px;
+    width: 296px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+}
+
+#contactanos {
+    position: absolute;
+    top: 950px;
+    left: 400px;
+    background-color: #ACD1E5;
+    border-radius: 10px;
+    width: 1050px;
+    height: 100px;
+    text-align: center;
+    line-height: 100px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+}
+
+#cuerpoIngresar {
+    width: 1500px;
+    height: 1100px;
+}
+
+#tituloIngresar {
+    position: relative;
+    top: 105px;
+    left: 446px;
+    color: #FFFFFF;
+    font-family: var(--bs-font);
+    font-size: 35px;
+    line-height: 45px;
+    text-align: left;
+}
