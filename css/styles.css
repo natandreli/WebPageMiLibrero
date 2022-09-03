@@ -231,7 +231,7 @@ input {
     font-family: var(--bs-font);
     color: #585858;
     font-size: 25px;
-    line-height: 62px;
+    line-height: 60px;
     width: 436px;
     text-align: center;
 }
@@ -382,4 +382,70 @@ input {
     font-size: 30px;
     line-height: 39px;
     text-align: left;
+}
+
+#sctCuerpoLibros {
+    height: 2350px;
+}
+
+.sctBuscar {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background-color: #C0A4E6;
+    border-radius: 10px;
+    width: 1400px;
+    height: 200px;
+}
+
+#pBuscar {
+    position: relative;
+    top: 80px;
+    left: 50px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 30px;
+    line-height: 39px;
+    text-align: left;
+}
+
+.nptBuscar {
+    top: 71px;
+    left: 209px;
+    width: 841px;
+}
+
+.btnBuscar {
+    top: 71px;
+    left: 1101px;
+    width: 249px;
+}
+
+#sctContactanosLibros {
+    top: 2200px;
+    left: 50px;
+    width: 1400px;
+    height: 100px;
+}
+
+#sctCuerpoAutores {
+    height: 2950px;
+}
+
+#sctContactanosAutores {
+    top: 2800px;
+    left: 50px;
+    width: 1400px;
+    height: 100px;
+}
+
+#sctCuerpoGeneros {
+    height: 3450px;
+}
+
+#sctContactanosGeneros {
+    top: 3300px;
+    left: 50px;
+    width: 1400px;
+    height: 100px;
 }
