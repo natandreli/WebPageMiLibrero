@@ -23,7 +23,7 @@ header {
     border-radius: 10px;
 }
 
-#barraDeNavegacion {
+#nvBarra {
     position: absolute;
     top: 300px;
     left: 60px;
@@ -33,12 +33,12 @@ header {
     border-radius: 10px;
 }
 
-#barraDeNavegacion ul {
+#nvBarra ul {
     list-style-type: none;
     text-align: center;
 }
 
-#barraDeNavegacion li {
+#nvBarra li {
     position: relative;
     top: 7px;
     display: inline;
@@ -67,20 +67,20 @@ h1 {
     text-align: center;
 }
 
-.cuerpo {
+.sctCuerpo {
     position: relative;
     margin-bottom: 50px;
     top: 400px;
     left: 10px;
+    width: 1500px;
     background-color: #585858;
 }
 
-#cuerpoIndex {
-    width: 1500px;
+#sctCuerpoIndex {
     height: 1100px;
 }
 
-.textSection {
+.sctTextIndex {
     position: absolute;
     left: 400px;
     background-color: #FFFAE2;
@@ -89,15 +89,15 @@ h1 {
     height: 400px;
 }
 
-#paraQueLeer {
+#sctTextIndexParaQueLeer {
     top: 50px;
 }
 
-#proposito {
+#sctTextIndexProposito {
     top: 500px;
 }
 
-.buttonSection {
+.sctButtonIndex {
     position: absolute;
     left: 50px;
     border-radius: 10px;
@@ -106,46 +106,46 @@ h1 {
     cursor: pointer;
 }
 
-#libros {
+#sctButtonIndexLibros {
     top: 50px;
     background-color: #FFC6F0;
 }
 
-#libros:hover {
+#sctButtonIndexLibros:hover {
     background-color: #FFC6F055;
 }
 
-#libros:active {
+#sctButtonIndexLibros:active {
     background-color: #ffe877;
 }
 
-#autores {
+#sctButtonIndexAutores {
     top: 400px;
     background-color: #FFC29F;
 }
 
-#autores:hover {
+#sctButtonIndexAutores:hover {
     background-color: #FFC29F55;
 }
 
-#autores:active {
+#sctButtonIndexAutores:active {
     background-color: #ffe877;
 }
 
-#generos {
+#sctButtonIndexGeneros {
     top: 750px;
     background-color: #97DEB7;
 }
 
-#generos:hover {
+#sctButtonIndexGeneros:hover {
     background-color: #97deb755;
 }
 
-#generos:active {
+#sctButtonIndexGeneros:active {
     background-color: #ffe877;
 }
 
-.buttonSectionImg {
+.sctButtonIndexImg {
     position: relative;
     top: 29px;
     left: 64px;
@@ -153,7 +153,7 @@ h1 {
     height: 174px;
 }
 
-.button {
+.btnIndex {
     position: absolute;
     bottom: 0px;
     left: 0px;
@@ -169,33 +169,217 @@ h1 {
     font-size: 25px;
 }
 
-#contactanos {
+.sctContactanos {
     position: absolute;
-    top: 950px;
-    left: 400px;
     background-color: #ACD1E5;
     border-radius: 10px;
-    width: 1050px;
-    height: 100px;
     text-align: center;
     line-height: 100px;
     color: #585858;
     font-family: var(--bs-font);
     font-size: 25px;
+    text-decoration: underline;
 }
 
-#cuerpoIngresar {
-    width: 1500px;
+#sctContactanosIndex {
+    top: 950px;
+    left: 400px;
+    width: 1050px;
+    height: 100px;
+}
+
+#sctCuerpoIngresar {
     height: 1100px;
 }
 
-#tituloIngresar {
-    position: relative;
+#pIngresarTitulo {
+    position: absolute;
     top: 105px;
-    left: 446px;
+    left: 496px;
     color: #FFFFFF;
     font-family: var(--bs-font);
     font-size: 35px;
     line-height: 45px;
+    text-align: left;
+}
+
+#sctContactanosIngresar {
+    top: 955px;
+    left: 50px;
+    width: 1400px;
+    height: 100px;
+}
+
+#sctIngresarDatos {
+    position: absolute;
+    top: 205px;
+    left: 227px;
+    background-color: #FFFAE2;
+    border-radius: 10px;
+    width: 1050px;
+    height: 230px;
+}
+
+input {
+    position: absolute;
+    left: 300px;
+    background-color: #FFFFFF;
+    border: 1px solid #8492A6;
+    border-radius: 5px;
+    width: 500px;
+    height: 60px;
+    font-family: var(--bs-font);
+    color: #585858;
+    font-size: 25px;
+    line-height: 62px;
+    width: 436px;
+    text-align: center;
+}
+
+#nptUsuario {
+    top: 30px;
+}
+
+#nptContrasena {
+    top: 140px;
+}
+
+.sctIngresar {
+    position: absolute;
+    top: 485px;
+    border-radius: 10px;
+    width: 500px;
+    height: 210px;
+}
+
+#sctIngresarIngresar {
+    background-color: #C4C1E6;
+    left: 227px;
+}
+
+#sctIngresarRegistrarse {
+    background-color: #F9D7F0;
+    left: 777px;
+}
+
+#btnIngresar {
+    top: 55px;
+    left: 30px;
+    cursor: pointer;
+}
+
+#btnIngresar:hover {
+    background-color: #FFFFFF55;
+}
+
+#btnIngresar:active {
+    background-color: #ffe877;
+}
+
+#btnRegistrarse {
+    top: 55px;
+    left: 32px;
+    cursor: pointer;
+}
+
+#btnRegistrarse:hover {
+    background-color: #FFFFFF55;
+}
+
+#btnRegistrarse:active {
+    background-color: #ffe877;
+}
+
+#aIngresarOlvidasteTuContrasena {
+    position: relative;
+    top: 140px;
+    left: 90px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    line-height: 32px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+#aIngresarOlvidasteTuContrasena:hover {
+    color: #03a0b1;
+}
+
+#pIngresarUnete {
+    position: relative;
+    top: 140px;
+    left: 0px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    line-height: 32px;
+    text-align: center;
+}
+
+#sctCuerpoCambiarContrasena {
+    height: 1380px;
+}
+
+#sctContactanosCambiarContrasena {
+    top: 1215px;
+    left: 50px;
+    width: 1400px;
+    height: 100px;
+}
+
+#pCambiarContrasenaTitulo {
+    position: absolute;
+    top: 105px;
+    left: 561px;
+    color: #FFFFFF;
+    font-family: var(--bs-font);
+    font-size: 35px;
+    line-height: 45px;
+    text-align: left;
+}
+
+#sctCambiarContrasenaCodigo {
+    position: absolute;
+    top: 485px;
+    left: 227px;
+    background-color: #FAC5F7;
+    border-radius: 10px;
+    width: 1050px;
+    height: 230px;
+}
+
+#sctButtonCambiarContrasenaGuardar {
+    top: 765px;
+    left: 500px;
+    background-color: #F0BA9C;
+}
+
+#btnCambiarContrasenaGuardar {
+    top: 75px;
+    left: 30px;
+    cursor: pointer;
+}
+
+#btnCambiarContrasenaGuardar:hover {
+    background-color: #FFFFFF55;
+}
+
+#btnCambiarContrasenaGuardar:active {
+    background-color: #ffe877;
+}
+
+#nptCodigoIngresado {
+    top: 127px;
+}
+
+#pCambiarContrasenaCodigoAleatorio {
+    position: absolute;
+    top: 55px;
+    left: 405px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 30px;
+    line-height: 39px;
     text-align: left;
 }

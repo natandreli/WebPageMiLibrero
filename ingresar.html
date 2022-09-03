@@ -23,7 +23,7 @@
 <body>
 
     <!-- Barra de navegación -->
-    <nav id="barraDeNavegacion">
+    <nav id="nvBarra">
         <div>
             <ul>
                 <li class="nav-item"><a class="nav-link px-lg-3 py-3 py-lg-4" href="index.html">Inicio</a></li>
@@ -40,18 +40,27 @@
         <h1>Mi librero</h1>
     </header>
 
-    <section class="cuerpo" id="cuerpoIngresar">
-        <p id="tituloIngresar">
+    <section class="sctCuerpo" id="sctCuerpoIngresar">
+        <p id="pIngresarTitulo">
             Ingreso o registro de usuario
         </p>
 
-        <section id="paraQueLeer">
+        <section id="sctIngresarDatos">
+            <input type="text" id="nptUsuario" placeholder="Usuario o correo electrónico">
+            <input type="password" id="nptContrasena" placeholder="Contraseña">
         </section>
 
-        <section id="proposito">
+        <section class = "sctIngresar" id="sctIngresarIngresar">
+            <input type="button" id="btnIngresar" value="INGRESAR">
+            <a id="aIngresarOlvidasteTuContrasena" href="cambiarContrasena.html">¿Olvidaste tu contraseña?</a>
         </section>
 
-        <section id="contactanos">
+        <section class = "sctIngresar" id="sctIngresarRegistrarse">
+            <input type="button" id="btnRegistrarse" value="REGISTRARSE">
+            <p id="pIngresarUnete">¡Únete!</p>
+        </section>
+
+        <section class="sctContactanos" id="sctContactanosIngresar">
            <p>Contáctanos</p>
         </section>
     </section>
