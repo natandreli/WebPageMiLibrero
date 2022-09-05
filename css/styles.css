@@ -7,6 +7,7 @@
 * {
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 body {
@@ -15,7 +16,7 @@ body {
 
 header {
     position: absolute;
-    top: 50px;
+    top: 130px;
     left: 60px;
     width: 1400px;
     height: 200px;
@@ -23,14 +24,24 @@ header {
     border-radius: 10px;
 }
 
-#nvBarra {
+nav.abajo {
+    position: fixed;
+    background: #fff0a4;
+}
+
+nav.abajo a {
+    color: #585858;
+}
+
+nav {
     position: absolute;
-    top: 300px;
+    top: 10px;
     left: 60px;
     height: 50px;
     width: 1400px;
     background-color: #585858;
     border-radius: 10px;
+    z-index: 2;
 }
 
 #nvBarra ul {
@@ -164,6 +175,15 @@ h1 {
     height: 174px;
 }
 
+.lnkSctButtonIndex {
+    position: absolute;
+    left: 0px;
+    border-radius: 10px;
+    width: 300px;
+    height: 300px;
+    z-index: 2;
+}
+
 .btnIndex {
     position: absolute;
     bottom: 0px;
@@ -251,7 +271,7 @@ h1 {
     z-index: 2;
 }
 
-#trianguloIndex{
+#trianguloIndex {
     left: 906px;
 }
 
@@ -505,4 +525,103 @@ input {
     left: 50px;
     width: 1400px;
     height: 100px;
+}
+
+.sctCuerpoGenerosGenero {
+    position: absolute;
+    left: 50px;
+    background-color: #C4C4C4;
+    border-radius: 10px;
+    width: 1400px;
+    height: 600px;
+}
+
+#sctCuerpoGenerosGeneroTerror {
+    top: 50px;
+    background-color: #C4C4C4;
+}
+
+#sctCuerpoGenerosGeneroCienciaFiccion {
+    top: 700px;
+    background-color: #A0D1E5;
+}
+
+#sctCuerpoGenerosGeneroFantasia {
+    top: 1350px;
+    background-color: #ED9A8A;
+}
+
+#sctCuerpoGenerosGeneroLiteraturaJuvenil {
+    top: 2000px;
+    background-color: #ED8AD7;
+}
+
+#sctCuerpoGenerosGeneroLiteraturaInfantil {
+    top: 2650px;
+    background-color: #F3F996;
+}
+
+.sctCuerpoGenerosGeneroTitulo {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+}
+
+.sliderContainer {
+    position: absolute;
+    top: 147px;
+    left: 0px;
+    width: 1400px;
+    height: 402px;
+}
+
+.sliderLibros {
+    box-sizing: content-box;
+    padding: 2px;
+    display: flex;
+    padding: 2px;
+    width: 1396px;
+    height: 401px;
+    overflow: hidden;
+    scroll-behavior: smooth;
+}
+
+.sctLibro {
+    margin-right: 25px;
+    margin-left: 25px;
+    background-color: #9C7D7D;
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 400px;
+}
+
+.imgPrevio {
+    position: absolute;
+    top: 153px;
+    left: 14px;
+    width: 64px;
+    height: 64px;
+    z-index: 1;
+    cursor: pointer;
+    object-fit: cover;
+    background: white;
+    border-radius: 50%;
+}
+
+.imgSiguiente {
+    position: absolute;
+    width: 64px;
+    top: 153px;
+    right: 14px;
+    height: 64px;
+    z-index: 1;
+    cursor: pointer;
+    object-fit: cover;
+    background: white;
+    border-radius: 50%;
 }
