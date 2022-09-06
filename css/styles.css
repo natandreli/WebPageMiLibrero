@@ -16,12 +16,13 @@ body {
 
 header {
     position: absolute;
-    top: 130px;
+    top: 70px;
     left: 60px;
     width: 1400px;
-    height: 200px;
+    height: 130px;
     background-color: #585858;
     border-radius: 10px;
+    line-height: 130px;
 }
 
 nav.abajo {
@@ -33,6 +34,10 @@ nav.abajo a {
     color: #585858;
 }
 
+nav.abajo a:hover {
+    color: #8fdee7;
+}
+
 nav {
     position: absolute;
     top: 10px;
@@ -41,7 +46,7 @@ nav {
     width: 1400px;
     background-color: #585858;
     border-radius: 10px;
-    z-index: 2;
+    z-index: 5;
 }
 
 #nvBarra ul {
@@ -70,18 +75,16 @@ a:hover {
 
 h1 {
     position: relative;
-    top: 34px;
     color: #FFFFFF;
     font-family: var(--bs-font);
     font-size: 100px;
-    line-height: 130px;
     text-align: center;
 }
 
 .sctCuerpo {
-    position: relative;
+    position: absolute;
     margin-bottom: 50px;
-    top: 400px;
+    top: 210px;
     left: 10px;
     width: 1500px;
     background-color: #585858;
@@ -581,11 +584,10 @@ input {
 }
 
 .sliderLibros {
-    box-sizing: content-box;
+    box-sizing: border-box;
     padding: 2px;
     display: flex;
-    padding: 2px;
-    width: 1396px;
+    width: 1400x;
     height: 401px;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -594,34 +596,104 @@ input {
 .sctLibro {
     margin-right: 25px;
     margin-left: 25px;
-    background-color: #9C7D7D;
     border-radius: 10px;
     min-width: 300px;
     min-height: 400px;
+    max-width: 300px;
+    max-height: 400px;
+}
+
+.sctLibroTerror {
+    background-color: #9C7D7D;
+}
+
+.sctLibroCienciaFiccion {
+    background-color: #979EDE;
+}
+
+.sctLibroFantasia {
+    background-color: #A0EBA0;
+}
+
+.sctLibroLiteraturaJuvenil {
+    background-color: #DEDD97;
+}
+
+.sctLibroLiteraturaInfantil {
+    background-color: #81B87E;
 }
 
 .imgPrevio {
     position: absolute;
-    top: 153px;
-    left: 14px;
-    width: 64px;
-    height: 64px;
-    z-index: 1;
+    top: 160px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    z-index: 2;
     cursor: pointer;
-    object-fit: cover;
-    background: white;
+    object-fit: contain;
     border-radius: 50%;
+    background-color: white;
+}
+
+.imgPrevio:hover {
+    background-color: #ffffff55;
+}
+
+.imgPrevio:active {
+    background-color: #ffe877;
 }
 
 .imgSiguiente {
     position: absolute;
-    width: 64px;
-    top: 153px;
-    right: 14px;
-    height: 64px;
-    z-index: 1;
+    width: 50px;
+    height: 50px;
+    top: 160px;
+    right: 5px;
+    z-index: 2;
     cursor: pointer;
-    object-fit: cover;
-    background: white;
+    object-fit: contain;
     border-radius: 50%;
+    background-color: white;
+}
+
+.imgSiguiente:hover {
+    background-color: #ffffff55;
+}
+
+.imgSiguiente:active {
+    background-color: #ffe877;
+}
+
+.sctLibroTitulo {
+    position: relative;
+    top: 331px;
+    left: auto;
+    margin-bottom: 34px;
+    color: #47525E;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    line-height: 33px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.sctLibroA {
+    position: relative;
+    /*left: 0px;*/
+    border-radius: 10px;
+    min-width: 300px;
+    min-height: 400px;
+    max-width: 300px;
+    max-height: 400px;
+    background-color: black;
+    z-index: 1;
+}
+
+.sctLibroA:hover {
+    background-color: #ffffff55;
+}
+
+.sctLibroA:active {
+    background-color: #ffe87755;
 }
