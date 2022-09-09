@@ -539,7 +539,6 @@ input {
 .sctCuerpoGenerosGenero {
     position: absolute;
     left: 50px;
-    background-color: #C4C4C4;
     border-radius: 10px;
     width: 1400px;
     height: 600px;
@@ -562,7 +561,7 @@ input {
 
 #sctCuerpoGenerosGeneroLiteraturaJuvenil {
     top: 2000px;
-    background-color: #ED8AD7;
+    background-color: #e7c5df;
 }
 
 #sctCuerpoGenerosGeneroLiteraturaInfantil {
@@ -610,23 +609,23 @@ input {
 }
 
 .sctLibroTerror {
-    background-color: #9C7D7D;
+    background-color: #888686;
 }
 
 .sctLibroCienciaFiccion {
-    background-color: #979EDE;
+    background-color: #739aa9;
 }
 
 .sctLibroFantasia {
-    background-color: #A0EBA0;
+    background-color: #f9b9ad;
 }
 
 .sctLibroLiteraturaJuvenil {
-    background-color: #DEDD97;
+    background-color: #aa8faa;
 }
 
 .sctLibroLiteraturaInfantil {
-    background-color: #81B87E;
+    background-color: #d0d680;
 }
 
 .imgPrevio {
@@ -673,12 +672,13 @@ input {
 
 .sctLibroTitulo {
     position: relative;
-    top: 331px;
+    top: 60px;
     left: auto;
-    margin-bottom: 34px;
+    margin-left: 10px;
+    margin-right: 10px;
     color: #47525E;
     font-family: var(--bs-font);
-    font-size: 25px;
+    font-size: 20px;
     line-height: 33px;
     text-align: center;
     text-decoration: underline;
@@ -686,14 +686,14 @@ input {
 
 .sctLibroA {
     position: relative;
-    /*left: 0px;*/
+    left: 20px;
+    top: 0px;
     border-radius: 10px;
-    min-width: 300px;
-    min-height: 400px;
-    max-width: 300px;
-    max-height: 400px;
+    width: 300px;
+    height: 400px;
     background-color: black;
-    z-index: 1;
+    size-adjust: 100%;
+    z-index: 3;
 }
 
 .sctLibroA:hover {
@@ -702,4 +702,12 @@ input {
 
 .sctLibroA:active {
     background-color: #ffe87755;
+}
+
+.portada {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    width: 200px;
+    height: 248px;
 }
