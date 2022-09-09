@@ -101,26 +101,44 @@ h1 {
     background-color: #FFFAE2;
     border-radius: 10px;
     width: 1050px;
-    height: 400px;
 }
 
 #sctTextIndexParaQueLeer {
     top: 50px;
+    height: 475px;
 }
 
 #sctTextIndexProposito {
-    top: 500px;
+    top: 550px;
+    height: 350px;
 }
 
 .pTituloIndex {
     position: absolute;
-    top: 50px;
+    top: 35px;
     left: 50px;
     color: #585858;
     font-family: var(--bs-font);
     font-size: 30px;
     line-height: 39px;
     text-align: left;
+}
+
+.pContenidoIndex {
+    position: absolute;
+    top: 105px;
+    left: 50px;
+    margin-right: 50px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 20px;
+    line-height: 28px;
+    text-align: left;
+}
+
+.pContenidoIndex a{
+    font-size: 20px;
+    color: #1e1e1e;
 }
 
 .sctButtonIndex {
