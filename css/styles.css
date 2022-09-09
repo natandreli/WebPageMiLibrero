@@ -471,28 +471,27 @@ input {
     background-color: #C0A4E6;
     border-radius: 10px;
     width: 1400px;
-    height: 200px;
+    height: 120px;
 }
 
 #pBuscar {
     position: relative;
-    top: 80px;
     left: 50px;
     color: #585858;
     font-family: var(--bs-font);
     font-size: 30px;
-    line-height: 39px;
+    line-height: 120px;
     text-align: left;
 }
 
 .nptBuscar {
-    top: 71px;
+    top: 30px;
     left: 209px;
     width: 841px;
 }
 
 .btnBuscar {
-    top: 71px;
+    top: 30px;
     left: 1101px;
     width: 249px;
 }
@@ -556,17 +555,17 @@ input {
 
 #sctCuerpoGenerosGeneroFantasia {
     top: 1350px;
-    background-color: #ED9A8A;
+    background-color: #a99dcc;
 }
 
 #sctCuerpoGenerosGeneroLiteraturaJuvenil {
     top: 2000px;
-    background-color: #e7c5df;
+    background-color: #c4889d;
 }
 
 #sctCuerpoGenerosGeneroLiteraturaInfantil {
     top: 2650px;
-    background-color: #F3F996;
+    background-color: #9add84;
 }
 
 .sctCuerpoGenerosGeneroTitulo {
@@ -617,15 +616,19 @@ input {
 }
 
 .sctLibroFantasia {
-    background-color: #f9b9ad;
+    background-color: #8d82ad;
 }
 
 .sctLibroLiteraturaJuvenil {
-    background-color: #aa8faa;
+    background-color: #edbfcf;
 }
 
 .sctLibroLiteraturaInfantil {
-    background-color: #d0d680;
+    background-color: #b2ff98;
+}
+
+.sctLibroLibros {
+    background-color: #b07da6;
 }
 
 .imgPrevio {
@@ -684,17 +687,17 @@ input {
     text-decoration: underline;
 }
 
-.sctLibroA {
-    position: relative;
-    left: 20px;
-    top: 0px;
+/*.sctLibroA {
+    margin-right: 25px;
+    margin-left: 25px;
     border-radius: 10px;
-    width: 300px;
-    height: 400px;
-    background-color: black;
-    size-adjust: 100%;
-    z-index: 3;
-}
+    min-width: 300px;
+    min-height: 400px;
+    max-width: 300px;
+    max-height: 400px;
+    z-index: 1;
+    background-color: #ffffff00;
+}*/
 
 .sctLibroA:hover {
     background-color: #ffffff55;
@@ -710,4 +713,25 @@ input {
     left: 50px;
     width: 200px;
     height: 248px;
+}
+
+#sliderContainerLibros {
+    border-radius: 10px;
+    background-color: #d0a1c4;
+    top: 220px;
+    left: 50px;
+    height: 450px;
+}
+
+#sliderLibrosLibros {
+    height: 425px;
+    margin-top: 25px;
+}
+
+#imgPrevioLibros {
+    top: 215px;
+}
+
+#imgSiguienteLibros {
+    top: 215px;
 }
