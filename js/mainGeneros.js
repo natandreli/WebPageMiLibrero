@@ -21,6 +21,8 @@ function main(){
     const siguienteLiteraturaInfantil = this.document.querySelector("#imgSiguienteLiteraturaInfantil");
     const sliderLiteraturaInfantil = this.document.querySelector("#sliderLibrosLiteraturaInfantil");
 
+    const libroMisery = this.document.querySelector("#libroMisery");
+
     previoTerror.addEventListener("click", function(){
         sliderTerror.scrollLeft -= 700;
     });
@@ -59,5 +61,9 @@ function main(){
 
     siguienteLiteraturaInfantil.addEventListener("click", function(){
         sliderLiteraturaInfantil.scrollLeft += 700;
+    });
+
+    libroMisery.addEventListener("click", function(){
+        var documento = open("libros.html", "replace");
     });
 }

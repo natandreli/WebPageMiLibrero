@@ -516,6 +516,7 @@ input {
 
 .btnBuscar:hover {
     background-color: #FFFFFF55;
+    cursor: pointer;
 }
 
 .btnBuscar:active {
@@ -623,6 +624,15 @@ input {
     min-height: 400px;
     max-width: 300px;
     max-height: 400px;
+    cursor: pointer;
+}
+
+.sctLibro:hover {
+    background-color: #FFFFFF55;
+}
+
+.sctLibro:active {
+    background-color: #ffe877;
 }
 
 .sctLibroTerror {
@@ -646,7 +656,7 @@ input {
 }
 
 .sctLibroLibros {
-    background-color: #b07da6;
+    background-color: #888686;
 }
 
 .imgPrevio {
@@ -664,6 +674,7 @@ input {
 
 .imgPrevio:hover {
     background-color: #ffffff55;
+    cursor: pointer;
 }
 
 .imgPrevio:active {
@@ -685,6 +696,7 @@ input {
 
 .imgSiguiente:hover {
     background-color: #ffffff55;
+    cursor: pointer;
 }
 
 .imgSiguiente:active {
@@ -705,26 +717,6 @@ input {
     text-decoration: underline;
 }
 
-/*.sctLibroA {
-    margin-right: 25px;
-    margin-left: 25px;
-    border-radius: 10px;
-    min-width: 300px;
-    min-height: 400px;
-    max-width: 300px;
-    max-height: 400px;
-    z-index: 1;
-    background-color: #ffffff00;
-}*/
-
-.sctLibroA:hover {
-    background-color: #ffffff55;
-}
-
-.sctLibroA:active {
-    background-color: #ffe87755;
-}
-
 .portada {
     position: relative;
     top: 50px;
@@ -735,7 +727,7 @@ input {
 
 #sliderContainerLibros {
     border-radius: 10px;
-    background-color: #d0a1c4;
+    background-color: #C4C4C4;
     top: 220px;
     left: 50px;
     height: 450px;
