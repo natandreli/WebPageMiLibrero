@@ -41,6 +41,7 @@ function main() {
     const carinoCuantoTeOdio = this.document.querySelector("#CarinoCuantoTeOdio");
     const memoriasYLadridos = this.document.querySelector("#MemoriasYLadridos");
     const meDicenSaraTomate = this.document.querySelector("#MeDicenSaraTomate");
+    const miPapaEsUnHombrePajaro = this.document.querySelector("#MiPapaEsUnHombrePajaro");
 
     const sctInformacionTitulo = this.document.getElementById("sctInformacionTituloLibros");
 
@@ -60,11 +61,39 @@ function main() {
         sctInformacionTitulo.innerHTML = "Después";
     });
 
-    misery.addEventListener("click", function(){
-        sctInformacionTitulo.innerHTML = "Misery";
+    laCajaDeBotonesDeGwendy.addEventListener("click", function(){
+        sctInformacionTitulo.innerHTML = "Después";
     });
 
-    despues.addEventListener("click", function(){
+    lasBellasDuermientes.addEventListener("click", function(){
         sctInformacionTitulo.innerHTML = "Después";
+    });
+
+    frankenstein.addEventListener("click", function(){
+        sctInformacionTitulo.innerHTML = "Después";
+    });
+
+    laCiudadDeLosNictalopes.addEventListener("click", function(){
+        sctInformacionTitulo.innerHTML = "Después";
+    });
+
+    losJuegosDelHambreI.addEventListener("click", function(){
+        sctInformacionTitulo.innerHTML = "Los juegos del hambre";
+    });
+
+    losJuegosDelHambreII.addEventListener("click", function(){
+        sctInformacionTitulo.innerHTML = "Los juegos del hambre";
+    });
+
+    losJuegosDelHambreIII.addEventListener("click", function(){
+        sctInformacionTitulo.innerHTML = "Los juegos del hambre";
+    });
+
+    baladaDePajarosCantoresYSerpientes.addEventListener("click", function(){
+        sctInformacionTitulo.innerHTML = "Balada de pájaros cantores y serpientes";
+    });
+
+    baladaDePajarosCantoresYSerpientes.addEventListener("click", function(){
+        sctInformacionTitulo.innerHTML = "Balada de pájaros cantores y serpientes";
     });
 }
