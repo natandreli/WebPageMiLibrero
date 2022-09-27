@@ -32,9 +32,11 @@
 
     <section class="sctCuerpo" id="sctCuerpoLibros">
         <section class="sctBuscar">
-            <p id="pBuscar">Buscar:</p>
-            <input type="text" class="nptBuscar" id="nptBuscarLibro" placeholder="Nombre del libro">
-            <input type="button" class="btnBuscar" value="BUSCAR">
+            <form class="formBuscar">
+                <p id="pBuscar">Buscar:</p>
+                <input type="text" class="nptBuscar" id="nptBuscarLibro" placeholder="Nombre del libro">
+                <input type="submit" class="btnBuscar" value="BUSCAR">
+            </form>
         </section>
 
         <section class="sliderContainer" id="sliderContainerLibros">
@@ -277,7 +279,8 @@
             <p class="sctInformacionTitulo" id="sctInformacionTituloLibro">Misery</p>
             <p class="sctInformacionA" id="sctInformacionNombreAutor">Stephen King</p>
             <p class="sctInformacionTexto sctInformacionTextoPrincipal" id="sctInformacionGenero">Género: Terror</p>
-            <p class="sctInformacionTexto sctInformacionTextoPrincipal" id="sctInformacionFechaDePublicacion">Fecha de publicación: 08 de
+            <p class="sctInformacionTexto sctInformacionTextoPrincipal" id="sctInformacionFechaDePublicacion">Fecha de
+                publicación: 08 de
                 junio de 1987</p>
             <p class="sctInformacionTexto sctInformacionTextoPrincipal" id="sctInformacionPuntuacionPorElLibrero">
                 Puntuación por el librero</p>
@@ -293,8 +296,8 @@
                 tendrá que luchar por su vida.</p>
             <p class="sctInformacionSubtitulo sctInformacionSubtituloOpinion">Reseña por el librero</p>
             <p class="sctInformacionTexto sctInformacionTextoOpinion" id="sctInformacionResena">Lorem ipsum dolor sit
-                amet consectetur adipisicing elit. Asperiores
-                repudiandae corporis incidunt eaque nihil consequatur porro consectetur numquam. Assumenda aliquid
+                amet consectetur adipisicing elit. Asperiores repudiandae corporis incidunt eaque nihil consequatur
+                porro consectetur numquam. Assumenda aliquid
                 facere obcaecati accusantium tenetur labore vero quae enim aspernatur aperiam! Lorem ipsum dolor sit
                 amet consectetur adipisicing elit. Molestias, aliquid id. Obcaecati ipsum facilis tempore sit adipisci,
                 magnam sed magni expedita quod. Quaerat quas nulla eveniet autem dolorem, nisi dolor.</p>
@@ -302,22 +305,19 @@
 
         <section class="sctOpiniones" id="sctOpinionesLibros">
             <scroll-container class="sctOpinionesContenedor">
-
                 <scroll-page class="sctOpinion sctOpinionesTitulo">Reseñas del libro</scroll-page>
-
                 <scroll-page class="sctOpinion">
                     <section>
-                        <p class="puntuacion">Puntuación: 5 estrellas</p>
+                        <p class="puntuacion" id="puntuacion1">Puntuación: 5 estrellas</p>
                     </section>
                     <section>
-                        <p class="opinion">Lorem ipsum dolor sit amet. Et libero deleniti sit expedita eius et
+                        <p class="opinion" id="opinion1">Lorem ipsum dolor sit amet. Et libero deleniti sit expedita eius et
                             doloremque architecto aut
                             facere dolores! Non inventore quia et quam suscipit eum repudiandae reiciendis. Et omnis
                             repudiandae ex omnis.
                             Et libero deleniti sit expedita.</p>
                     </section>
                 </scroll-page>
-
                 <scroll-page class="sctOpinion">
                     <section>
                         <p class="puntuacion" id="puntuacion2">Puntuación: 5 estrellas</p>
@@ -331,7 +331,6 @@
                             Et libero deleniti sit expedita.</p>
                     </section>
                 </scroll-page>
-
                 <scroll-page class="sctOpinion">
                     <section>
                         <p class="puntuacion" id="puntuacion3">Puntuación: 5 estrellas</p>
@@ -345,7 +344,6 @@
                             Et libero deleniti sit expedita.</p>
                     </section>
                 </scroll-page>
-
                 <scroll-page class="sctOpinion">
                     <section>
                         <p class="puntuacion" id="puntuacion4">Puntuación: 5 estrellas</p>
@@ -359,7 +357,6 @@
                             Et libero deleniti sit expedita.</p>
                     </section>
                 </scroll-page>
-
                 <scroll-page class="sctOpinion">
                     <section>
                         <p class="puntuacion" id="puntuacion5">Puntuación: 5 estrellas</p>
@@ -373,11 +370,21 @@
                             Et libero deleniti sit expedita.</p>
                     </section>
                 </scroll-page>
-
             </scroll-container>
         </section>
 
         <section class="sctAgregarOpinion" id="sctAgregarOpinionLibros">
+            <p class="sctAgregarOpinionTitulo">
+                Escribe tu opinión</p>
+            <form class="formAgregarOpinion">
+                <p class="sctAgregarOpinionTexto">
+                    ¿Qué puntuación le das?
+                </p>
+                <input class="inputPuntuacion" id="inputPuntuacionLibros" type="range" min="0" max="5">
+                <p class="sctAgregarOpinionTexto" id="estrellas"></p>
+                <textarea class="inputOpinion" id="inputOpinionLibros" placeholder="¡Escribe tu reseña!" maxlength="1000"></textarea>
+                <input class="inputAgregar" id="inputAgregarLibros" type="submit" value="AGREGAR RESEÑA">
+            </form>
         </section>
 
         <div class="triangulo"></div>

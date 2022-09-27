@@ -827,16 +827,6 @@ input {
     left: 350px;
 }
 
-.sctOpiniones {
-    position: absolute;
-    top: 720px;
-    left: 50px;
-    background-color: #FFFAE2;
-    border-radius: 10px;
-    width: 1400px;
-    height: 750px;
-}
-
 .sctAgregarOpinion {
     position: absolute;
     top: 2250px;
@@ -917,4 +907,84 @@ input {
 .opinionAutores {
     top: 50px;
     left: 50px;
+}
+
+.sctAgregarOpinionTitulo {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    line-height: 32px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.formAgregarOpinion {
+    position: absolute;
+    top: 100px;
+    left: 50px;
+}
+
+.sctAgregarOpinionTexto {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    line-height: 32px;
+    width: 1000px;
+}
+
+.inputPuntuacion {
+    height: 32px;
+    width: 200px;
+}
+
+#estrellas {
+    left: 530px;
+}
+
+.inputOpinion {
+    position: absolute;
+    left: 0px;
+    background-color: #FFFFFF;
+    border: 1px solid #8492A6;
+    width: 1275px;
+    border-radius: 5px;
+    font-family: var(--bs-font);
+    color: #585858;
+    font-size: 25px;
+    padding: 10px;
+}
+
+#inputOpinionLibros {
+    top: 50px;
+    height: 100px;
+}
+
+#inputOpinionAutores {
+    top: 0px;
+    height: 150px;
+}
+
+.inputAgregar {
+    position: absolute;
+    top: 190px;
+    left: 0px;
+    cursor: pointer;
+}
+
+.inputAgregar:hover {
+    background-color: #FFFFFF55;
+}
+
+.inputAgregar:active {
+    background-color: #ffe877;
+}
+
+.sctInformacionSubtituloBiografia {
+    margin-top: -160px;
 }

@@ -51,6 +51,10 @@ function main() {
     const fechaDePublicacion = this.document.getElementById("sctInformacionFechaDePublicacion");
     const sinopsis = this.document.getElementById("sctInformacionSinopsis");
 
+    const inputPuntuacion = this.document.getElementById("inputPuntuacionLibros");
+    const estrellas = this.document.getElementById("estrellas");
+    estrellas.innerHTML = String(inputPuntuacion.value) + " estrellas " + escribirEstrellas(inputPuntuacion.value);
+
     previoLibros.addEventListener("click", function () {
         sliderLibrosLibros.scrollLeft -= 700;
     });
@@ -281,7 +285,7 @@ function main() {
         nombreAutor.innerHTML = "Shelby Mahurin";
         genero.innerHTML = "Género: Fantasía";
         fechaDePublicacion.innerHTML = "Fecha de publicación: 12 de enero de 2021";
-        sinopsis.innerHTML = "Adonde ella vaya, él irá. Donde ella se quede, él se quedará. Hasta que la muerte los separe. Lou, Reid, Coco y Ansel huyen no solo del aquelarre, sino también del reino y de la Iglesia. Son fugitivos y no tienen donde ocultarse. Para sobrevivir, necesitan aliados. Y unos muy poderosos. Pero mientras Lou se preocupa cada vez más por salvar a sus seres queridos, se adentra en el lado oscuro de la magia. Y el precio a pagar podría ser la persona a la que más teme perder: Reid. Ellos están unidos por un juramento y solo existe una cosa que puede separarlos: la muerte.";
+        sinopsis.innerHTML = "A donde ella vaya, él irá. Donde ella se quede, él se quedará. Hasta que la muerte los separe. Lou, Reid, Coco y Ansel huyen no solo del aquelarre, sino también del reino y de la Iglesia. Son fugitivos y no tienen donde ocultarse. Para sobrevivir, necesitan aliados. Y unos muy poderosos. Pero mientras Lou se preocupa cada vez más por salvar a sus seres queridos, se adentra en el lado oscuro de la magia. Y el precio a pagar podría ser la persona a la que más teme perder: Reid. Ellos están unidos por un juramento y solo existe una cosa que puede separarlos: la muerte.";
     });
 
     juventudEnExtasis.addEventListener("click", function(){
@@ -400,4 +404,16 @@ function main() {
         fechaDePublicacion.innerHTML = "Fecha de publicación: 01 de octubre de 2007";
         sinopsis.innerHTML = "En una ciudad lluviosa al norte de Inglaterra, cosas extrañas están pasando. Papá está armando un par de alas, comiendo moscas y arreglando un nido. La tía Dorita está haciendo empanaditas. El señor Popó está recorriendo las calles gritando muy fuerte. Hasta el señor Menta, el profesor, está dando aletazos. Y viendo todo esto está Isabelita; quien extraña a su mamá y tiene que cuidar de su padre mientras piensa qué hermosos son los pájaros. ¿Qué está detrás de todo esto? ¡La Gran Competencia de Pájaros Humanos, por supuesto! Este libro muestra la importancia de los lazos familiares y del amor entre padres e hijos sobre todas las cosas. Además, hace énfasis en la fortaleza que pueden llegar a tener los niños y la manera como ellos sobrellevan la pérdida de un ser querido y logran salir adelante, ayudando a otros en el camino.";
     });
+
+    inputPuntuacion.addEventListener("click", function(){
+        estrellas.innerHTML = String(inputPuntuacion.value) + " estrellas " + escribirEstrellas(inputPuntuacion.value);
+    });
+}
+
+function escribirEstrellas(numeroEstrellas){
+    var estrellas = "";
+    for(var i = 0; i < numeroEstrellas ; i++){
+        estrellas += "★";
+    }
+    return estrellas;
 }
