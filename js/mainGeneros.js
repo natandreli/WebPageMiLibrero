@@ -1,6 +1,6 @@
 window.addEventListener("load", main);
 
-function main(){
+function main() {
     const previoTerror = this.document.querySelector("#imgPrevioTerror");
     const siguienteTerror = this.document.querySelector("#imgSiguienteTerror");
     const sliderTerror = this.document.querySelector("#sliderLibrosTerror");
@@ -14,56 +14,50 @@ function main(){
     const sliderFantasia = this.document.querySelector("#sliderLibrosFantasia");
 
     const previoLiteraturaJuvenil = this.document.querySelector("#imgPrevioLiteraturaJuvenil");
-    const siguienteLiteraturaJuvenil  = this.document.querySelector("#imgSiguienteLiteraturaJuvenil");
-    const sliderLiteraturaJuvenil  = this.document.querySelector("#sliderLibrosLiteraturaJuvenil");
+    const siguienteLiteraturaJuvenil = this.document.querySelector("#imgSiguienteLiteraturaJuvenil");
+    const sliderLiteraturaJuvenil = this.document.querySelector("#sliderLibrosLiteraturaJuvenil");
 
     const previoLiteraturaInfantil = this.document.querySelector("#imgPrevioLiteraturaInfantil");
     const siguienteLiteraturaInfantil = this.document.querySelector("#imgSiguienteLiteraturaInfantil");
     const sliderLiteraturaInfantil = this.document.querySelector("#sliderLibrosLiteraturaInfantil");
 
-    const libroMisery = this.document.querySelector("#libroMisery");
-
-    previoTerror.addEventListener("click", function(){
+    previoTerror.addEventListener("click", function () {
         sliderTerror.scrollLeft -= 700;
     });
 
-    siguienteTerror.addEventListener("click", function(){
+    siguienteTerror.addEventListener("click", function () {
         sliderTerror.scrollLeft += 700;
     });
 
-    previoCienciaFiccion.addEventListener("click", function(){
+    previoCienciaFiccion.addEventListener("click", function () {
         sliderCienciaFiccion.scrollLeft -= 700;
     });
 
-    siguienteCienciaFiccion.addEventListener("click", function(){
+    siguienteCienciaFiccion.addEventListener("click", function () {
         sliderCienciaFiccion.scrollLeft += 700;
     });
 
-    previoFantasia.addEventListener("click", function(){
+    previoFantasia.addEventListener("click", function () {
         sliderFantasia.scrollLeft -= 700;
     });
 
-    siguienteFantasia.addEventListener("click", function(){
+    siguienteFantasia.addEventListener("click", function () {
         sliderFantasia.scrollLeft += 700;
     });
 
-    previoLiteraturaJuvenil.addEventListener("click", function(){
+    previoLiteraturaJuvenil.addEventListener("click", function () {
         sliderLiteraturaJuvenil.scrollLeft -= 700;
     });
 
-    siguienteLiteraturaJuvenil.addEventListener("click", function(){
+    siguienteLiteraturaJuvenil.addEventListener("click", function () {
         sliderLiteraturaJuvenil.scrollLeft += 700;
     });
 
-    previoLiteraturaInfantil.addEventListener("click", function(){
+    previoLiteraturaInfantil.addEventListener("click", function () {
         sliderLiteraturaInfantil.scrollLeft -= 700;
     });
 
-    siguienteLiteraturaInfantil.addEventListener("click", function(){
+    siguienteLiteraturaInfantil.addEventListener("click", function () {
         sliderLiteraturaInfantil.scrollLeft += 700;
-    });
-
-    libroMisery.addEventListener("click", function(){
-        var documento = open("libros.html", "replace");
     });
 }

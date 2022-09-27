@@ -136,7 +136,7 @@ h1 {
     text-align: left;
 }
 
-.pContenidoIndex a{
+.pContenidoIndex a {
     font-size: 20px;
     color: #1e1e1e;
 }
@@ -478,8 +478,8 @@ input {
 }
 
 #sctCuerpoLibros {
-    top: -25px;
-    height: 2350px;
+    top: -75px;
+    height: 2850px;
 }
 
 .sctBuscar {
@@ -524,19 +524,19 @@ input {
 }
 
 #sctContactanosLibros {
-    top: 2200px;
+    top: 2700px;
     left: 50px;
     width: 1400px;
     height: 100px;
 }
 
 #sctCuerpoAutores {
-    top: -85px;
-    height: 2950px;
+    top: -75px;
+    height: 2850px;
 }
 
 #sctContactanosAutores {
-    top: 2800px;
+    top: 2700px;
     left: 50px;
     width: 1400px;
     height: 100px;
@@ -628,7 +628,7 @@ input {
 }
 
 .sctLibro:hover {
-    background-color: #FFFFFF55;
+    background-color: #68666666;
 }
 
 .sctLibro:active {
@@ -656,7 +656,7 @@ input {
 }
 
 .sctLibroLibros {
-    background-color: #888686;
+    background-color: #FFC8A9;
 }
 
 .imgPrevio {
@@ -725,9 +725,14 @@ input {
     height: 248px;
 }
 
+.portadaPrincipal {
+    width: 250px;
+    height: 320px;
+}
+
 #sliderContainerLibros {
     border-radius: 10px;
-    background-color: #C4C4C4;
+    background-color: #FFFAE2;
     top: 220px;
     left: 50px;
     height: 450px;
@@ -744,4 +749,172 @@ input {
 
 #imgSiguienteLibros {
     top: 215px;
+}
+
+.sctInformacion {
+    position: absolute;
+    top: 720px;
+    left: 50px;
+    background-color: #FFFAE2;
+    border-radius: 10px;
+    width: 1400px;
+    height: 800px;
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+
+.sctInformacionTitulo {
+    position: relative;
+    top: -260px;
+    left: 350px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 30px;
+    line-height: 39px;
+    font-weight: 600;
+}
+
+.sctInformacionSubtitulo {
+    position: relative;
+    left: 50px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    line-height: 32px;
+    text-align: left;
+    font-weight: 600;
+}
+
+.sctInformacionSubtituloSipnosis {
+    margin-top: -150px;
+}
+
+.sctInformacionSubtituloOpinion {
+    margin-top: 20px;
+}
+
+.sctInformacionTextoOpinion {
+    margin-bottom: 50px;
+}
+
+.sctInformacionA {
+    position: relative;
+    top: -250px;
+    left: 350px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    line-height: 32px;
+    text-align: left;
+    text-decoration: underline;
+}
+
+.sctInformacionTexto {
+    position: relative;
+    margin-top: 10px;
+    left: 50px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    line-height: 32px;
+    text-align: left;
+    width: 1300px;
+}
+
+.sctInformacionTextoPrincipal {
+    top: -230px;
+    left: 350px;
+}
+
+.sctOpiniones {
+    position: absolute;
+    top: 720px;
+    left: 50px;
+    background-color: #FFFAE2;
+    border-radius: 10px;
+    width: 1400px;
+    height: 750px;
+}
+
+.sctAgregarOpinion {
+    position: absolute;
+    top: 2250px;
+    left: 50px;
+    background-color: #FFFAE2;
+    border-radius: 10px;
+    width: 1400px;
+    height: 400px;
+}
+
+.sctOpiniones {
+    position: absolute;
+    top: 1570px;
+    left: 50px;
+    background-color: #FFC8A9;
+    border-radius: 10px;
+    width: 1400px;
+    height: 630px;
+}
+
+.sctOpinionesContenedor {
+    display: block;
+    width: 1400px;
+    height: 630px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.sctOpinion {
+    display: flex;
+    margin-bottom: 50px;
+    margin-left: 50px;
+    background-color: #FFFAE2;
+    border-radius: 10px;
+    width: 1300px;
+    height: 300px;
+}
+
+.sctOpinionesTitulo {
+    position: relative;
+    height: 35px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #585858;
+    background-color: #FFC8A9;
+    font-family: var(--bs-font);
+    font-size: 35px;
+    line-height: 45px;
+    text-align: left;
+}
+
+.puntuacion {
+    position: relative;
+    top: 50px;
+    left: 50px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    font-style: italic;
+    line-height: 32px;
+    text-align: left;
+    width: 1200px;
+}
+
+.opinion {
+    position: relative;
+    top: 110px;
+    left: -1150px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    line-height: 28px;
+    text-align: left;
+    width: 1200px;
+}
+
+.opinionAutores {
+    top: 50px;
+    left: 50px;
 }
