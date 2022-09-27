@@ -27,15 +27,15 @@ header {
 
 nav.abajo {
     position: fixed;
-    background: #fff0a4;
+    background: #9AD1BF;
 }
 
 nav.abajo a {
-    color: #585858;
+    color: #ffffff;
 }
 
 nav.abajo a:hover {
-    color: #8fdee7;
+    color: #585858;
 }
 
 nav {
@@ -669,11 +669,11 @@ input {
     cursor: pointer;
     object-fit: contain;
     border-radius: 50%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.803);
 }
 
 .imgPrevio:hover {
-    background-color: #ffffff55;
+    background-color: #d9d9d9bc;
     cursor: pointer;
 }
 
@@ -691,11 +691,11 @@ input {
     cursor: pointer;
     object-fit: contain;
     border-radius: 50%;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.803);
 }
 
 .imgSiguiente:hover {
-    background-color: #ffffff55;
+    background-color: #d9d9d9bc;
     cursor: pointer;
 }
 
