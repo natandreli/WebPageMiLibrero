@@ -1,3 +1,5 @@
+//import 'bootstrap';
+
 window.addEventListener("load", main);
 
 function main() {
