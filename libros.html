@@ -31,13 +31,13 @@
     </header>
 
     <section class="sctCuerpo" id="sctCuerpoLibros">
-        <section class="sctBuscar">
+        <!--<section class="sctBuscar">
             <form class="formBuscar">
                 <p id="pBuscar">Buscar:</p>
                 <input type="text" class="nptBuscar" id="nptBuscarLibro" placeholder="Nombre del libro">
                 <input type="submit" class="btnBuscar" value="BUSCAR">
             </form>
-        </section>
+        </section>-->
 
         <section class="sliderContainer" id="sliderContainerLibros">
             <img src="img/previo.png" class="imgPrevio" id="imgPrevioLibros">
@@ -303,7 +303,7 @@
                 magnam sed magni expedita quod. Quaerat quas nulla eveniet autem dolorem, nisi dolor.</p>
         </section>
 
-        <section class="sctOpiniones" id="sctOpinionesLibros">
+        <!--<section class="sctOpiniones" id="sctOpinionesLibros">
             <scroll-container class="sctOpinionesContenedor">
                 <scroll-page class="sctOpinion sctOpinionesTitulo">Reseñas del libro</scroll-page>
                 <scroll-page class="sctOpinion">
@@ -311,7 +311,8 @@
                         <p class="puntuacion" id="puntuacion1">Puntuación: 5 estrellas</p>
                     </section>
                     <section>
-                        <p class="opinion" id="opinion1">Lorem ipsum dolor sit amet. Et libero deleniti sit expedita eius et
+                        <p class="opinion" id="opinion1">Lorem ipsum dolor sit amet. Et libero deleniti sit expedita
+                            eius et
                             doloremque architecto aut
                             facere dolores! Non inventore quia et quam suscipit eum repudiandae reiciendis. Et omnis
                             repudiandae ex omnis.
@@ -371,10 +372,66 @@
                     </section>
                 </scroll-page>
             </scroll-container>
-        </section>
+        </section>-->
 
         <section class="sctAgregarOpinion" id="sctAgregarOpinionLibros">
             <p class="sctAgregarOpinionTitulo">
+                Escribe tu reseña</p>
+            <form action="./LibroServlet" method="POST">
+                <div class="divInput" id="divInputNLibro">
+                    <p class="pInput">N° reseña: <input class="inputInput" type="text" name="idLibro"
+                            value="${libro.idLibro}" /></p>
+                </div>
+                <div class="divInput">
+                    <p class="pInput">N° libro: <input class="inputInput" type="text" name="idLibro"
+                            value="${libro.idLibro}" /></p>
+                </div>
+                <div class="divInput">
+                    <p class="pInput">Nombre del libro: <input class="inputInput" type="text" name="nombre"
+                            value="${libro.nombre}" /></p>
+                </div>
+                <div class="divInput">
+                    <p class="pInput">Autor del libro: <input class="inputInput" type="text" name="autor"
+                            value="${libro.autor}" /></p>
+                </div>
+                <div class="divInput">
+                    <p class="pInput">Puntuación: <input class="inputInput" type="text" name="genero"
+                            value="${libro.genero}" /></p>
+                </div>
+                <div class="divInput">
+                    <p class="pInput">Reseña: <input class="inputInput" type="text" name="fechaDePublicacion"
+                            value="${libro.fechaDePublicacion}" /></p>
+                </div>
+                <div class="divInputSubmit">
+                    <input class="inputSubmit" id="inputSubmitAdd" type="submit" name="action" value="Agregar" />
+                    <input class="inputSubmit" id="inputSubmitEdit" type="submit" name="action" value="Editar" />
+                    <input class="inputSubmit" id="inputSubmitDelete" type="submit" name="action" value="Eliminar" />
+                    <input class="inputSubmit" id="inputSubmitSearch" type="submit" name="action" value="Buscar"
+                        onclick="validar" />
+                </div>
+            </form>
+            <div class="divTable">
+                <table>
+                    <th>N° reseña</th>
+                    <th>N° Libro</th>
+                    <th>Nombre del libro</th>
+                    <th>Autor del libro</th>
+                    <th>Puntuación</th>
+                    <th>Reseña</th>
+
+                    <c:forEach items="${allLibros}" var="libro">
+                        <tr>
+                            <td>${libro.idLibro}</td>
+                            <td>${libro.nombre}</td>
+                            <td>${libro.autor}</td>
+                            <td>${libro.genero}</td>
+                            <td>${libro.fechaDePublicacion}</td>
+                            <td>${libro.puntuacionPorElLibrero}</td>
+                        </tr>
+                    </c:forEach>
+                </table>
+            </div>
+            <!--<p class="sctAgregarOpinionTitulo">
                 Escribe tu opinión</p>
             <form class="formAgregarOpinion">
                 <p class="sctAgregarOpinionTexto">
@@ -384,7 +441,7 @@
                 <p class="sctAgregarOpinionTexto" id="estrellas"></p>
                 <textarea class="inputOpinion" id="inputOpinionLibros" placeholder="¡Escribe tu reseña!" maxlength="1000"></textarea>
                 <input class="inputAgregar" id="inputAgregarLibros" type="submit" value="AGREGAR RESEÑA">
-            </form>
+            </form>-->
         </section>
 
         <div class="triangulo"></div>

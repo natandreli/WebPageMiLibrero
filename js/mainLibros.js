@@ -53,10 +53,6 @@ function main() {
     const fechaDePublicacion = this.document.getElementById("sctInformacionFechaDePublicacion");
     const sinopsis = this.document.getElementById("sctInformacionSinopsis");
 
-    const inputPuntuacion = this.document.getElementById("inputPuntuacionLibros");
-    const estrellas = this.document.getElementById("estrellas");
-    estrellas.innerHTML = String(inputPuntuacion.value) + " estrellas " + escribirEstrellas(inputPuntuacion.value);
-
     previoLibros.addEventListener("click", function () {
         sliderLibrosLibros.scrollLeft -= 700;
     });
@@ -406,16 +402,4 @@ function main() {
         fechaDePublicacion.innerHTML = "Fecha de publicación: 01 de octubre de 2007";
         sinopsis.innerHTML = "En una ciudad lluviosa al norte de Inglaterra, cosas extrañas están pasando. Papá está armando un par de alas, comiendo moscas y arreglando un nido. La tía Dorita está haciendo empanaditas. El señor Popó está recorriendo las calles gritando muy fuerte. Hasta el señor Menta, el profesor, está dando aletazos. Y viendo todo esto está Isabelita; quien extraña a su mamá y tiene que cuidar de su padre mientras piensa qué hermosos son los pájaros. ¿Qué está detrás de todo esto? ¡La Gran Competencia de Pájaros Humanos, por supuesto! Este libro muestra la importancia de los lazos familiares y del amor entre padres e hijos sobre todas las cosas. Además, hace énfasis en la fortaleza que pueden llegar a tener los niños y la manera como ellos sobrellevan la pérdida de un ser querido y logran salir adelante, ayudando a otros en el camino.";
     });
-
-    inputPuntuacion.addEventListener("click", function(){
-        estrellas.innerHTML = String(inputPuntuacion.value) + " estrellas " + escribirEstrellas(inputPuntuacion.value);
-    });
-}
-
-function escribirEstrellas(numeroEstrellas){
-    var estrellas = "";
-    for(var i = 0; i < numeroEstrellas ; i++){
-        estrellas += "★";
-    }
-    return estrellas;
 }

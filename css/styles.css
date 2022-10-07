@@ -734,7 +734,7 @@ input {
 #sliderContainerLibros {
     border-radius: 10px;
     background-color: #FFFAE2;
-    top: 220px;
+    top: 50px;
     left: 50px;
     height: 450px;
 }
@@ -754,7 +754,7 @@ input {
 
 .sctInformacion {
     position: absolute;
-    top: 720px;
+    top: 550px;
     left: 50px;
     background-color: #FFFAE2;
     border-radius: 10px;
@@ -829,13 +829,15 @@ input {
 }
 
 .sctAgregarOpinion {
+    overflow-y: scroll;
+    overflow-x: hidden;
     position: absolute;
-    top: 2250px;
+    top: 1400px;
     left: 50px;
-    background-color: #FFFAE2;
+    background-color: #FFC8A9;
     border-radius: 10px;
     width: 1400px;
-    height: 400px;
+    height: 1250px;
 }
 
 .sctOpiniones {
@@ -914,9 +916,10 @@ input {
     position: absolute;
     top: 50px;
     left: 50px;
+    margin-bottom: 20px;
     color: #585858;
     font-family: var(--bs-font);
-    font-size: 25px;
+    font-size: 30px;
     line-height: 32px;
     text-align: left;
     font-weight: 600;
@@ -988,4 +991,99 @@ input {
 
 .sctInformacionSubtituloBiografia {
     margin-top: -160px;
+}
+
+.pInput {
+    position: relative;
+    margin-bottom: 10px;
+    margin-left: 50px;
+    margin-right: 20px;
+    color: #585858;
+    font-family: var(--bs-font);
+    font-size: 25px;
+    line-height: 60px;
+    text-align: left;
+}
+
+.divInput {
+    position: relative;
+    margin-top: 15px;
+    height: 60px;
+    background-color: #e3b79e;
+    border-radius: 5px;
+    padding-left: 17%;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.inputInput {
+    margin-top: 10px;
+    margin-left: 20px;
+    height: 40px;
+}
+
+#divInputNLibro {
+    margin-top: 115px;
+}
+
+.divInputSubmit {
+    position: relative;
+    margin-top: 15px;
+    height: 70px;
+    padding-top: 10px;
+    background-color: #e3b79e;
+    border-radius: 5px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.inputSubmit {
+    position: relative;
+    left: 0px;
+    width: 286px;
+    margin-left: 25px;
+    cursor: pointer;
+    background-color: #FFFAE2;
+}
+
+.inputSubmit:hover {
+    background-color: #ffe877;
+}
+
+.divTable {
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 15px;
+    background-color: #e3b79e;
+}
+
+table {
+    font-family: var(--bs-font);
+    text-align: center;
+    border-collapse: collapse;
+    width: 100%;
+    font-size: 20px;
+}
+
+table td,
+table th {
+    border: 1px solid #585858;
+    padding: 8px;
+}
+
+table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+table tr:hover {
+    background-color: #ddd;
+}
+
+table th {
+    height: 30px;
+    font-size: 23px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #7A7A7A;
+    color: white;
 }
