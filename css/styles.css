@@ -611,7 +611,7 @@ input {
     box-sizing: border-box;
     padding: 2px;
     display: flex;
-    width: 1400x;
+    width: 1400px;
     height: 401px;
     overflow: hidden;
     scroll-behavior: smooth;
@@ -1057,6 +1057,18 @@ input {
     background-color: #e3b79e;
 }
 
+#inputIdLibro {
+    background-color: #d5d5d2;
+}
+
+#inputNombreLibro {
+    background-color: #d5d5d2;
+}
+
+#inputAutorLibro {
+    background-color: #d5d5d2;
+}
+
 table {
     font-family: var(--bs-font);
     text-align: center;
@@ -1069,10 +1081,6 @@ table td,
 table th {
     border: 1px solid #585858;
     padding: 8px;
-}
-
-table tr:nth-child(even) {
-    background-color: #f2f2f2;
 }
 
 table tr:hover {

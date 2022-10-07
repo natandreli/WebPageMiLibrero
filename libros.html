@@ -379,28 +379,28 @@
                 Escribe tu reseña</p>
             <form action="./LibroServlet" method="POST">
                 <div class="divInput" id="divInputNLibro">
-                    <p class="pInput">N° reseña: <input class="inputInput" type="text" name="idLibro"
-                            value="${libro.idLibro}" /></p>
+                    <p class="pInput">N° reseña: <input class="inputInput" id="inputIdResena" type="text" name="idResena"
+                            value="${resena.idResena}" placeholder="Escriba el N° de la reseña" /></p>
                 </div>
                 <div class="divInput">
-                    <p class="pInput">N° libro: <input class="inputInput" type="text" name="idLibro"
-                            value="${libro.idLibro}" /></p>
+                    <p class="pInput">N° libro: <input class="inputInput" id="inputIdLibro" type="text" name="idLibro"
+                            value="${resena.idLibro}" placeholder="Escriba el N° del libro" /></p>
                 </div>
                 <div class="divInput">
-                    <p class="pInput">Nombre del libro: <input class="inputInput" type="text" name="nombre"
-                            value="${libro.nombre}" /></p>
+                    <p class="pInput">Nombre del libro: <input class="inputInput" id="inputNombreLibro" type="text" name="nombreLibro"
+                            value="${resena.nombreLibro}" placeholder="Escriba el nombre del libro" /></p>
                 </div>
                 <div class="divInput">
-                    <p class="pInput">Autor del libro: <input class="inputInput" type="text" name="autor"
-                            value="${libro.autor}" /></p>
+                    <p class="pInput">Autor del libro: <input class="inputInput" id="inputAutorLibro" type="text" name="autorLibro"
+                            value="${resena.autorLibro}" placeholder="Escriba el autor del libro"/></p>
                 </div>
                 <div class="divInput">
-                    <p class="pInput">Puntuación: <input class="inputInput" type="text" name="genero"
-                            value="${libro.genero}" /></p>
+                    <p class="pInput">Puntuación: <input class="inputInput" id="inputPuntuacion" type="text" name="puntuacion"
+                            value="${resena.puntuacion}" placeholder="Escriba la puntuación" /></p>
                 </div>
                 <div class="divInput">
-                    <p class="pInput">Reseña: <input class="inputInput" type="text" name="fechaDePublicacion"
-                            value="${libro.fechaDePublicacion}" /></p>
+                    <p class="pInput">Reseña: <input class="inputInput" id="inputResena" type="text" name="resena"
+                            value="${resena.resena}" placeholder="Escriba la reseña"/></p>
                 </div>
                 <div class="divInputSubmit">
                     <input class="inputSubmit" id="inputSubmitAdd" type="submit" name="action" value="Agregar" />
